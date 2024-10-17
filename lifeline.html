@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifeline Foundation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+        }
+        .navbar-top {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(12, 143, 106); 
+            padding: 10px 20px;
+            color: white;
+        }
+        .navbar-top .contact-info {
+            margin: 0 50px; 
+            text-align: center; 
+            transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s;
+        }
+        .navbar-top .social-icons {
+            display: flex;
+            gap: 15px;
+            position: absolute; 
+            right: 20px; 
+        }
+        .navbar-top .social-icons a {
+            color: white;
+            text-decoration: double;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+        .navbar-top .social-icons a:hover {
+            color: #ddd;
+        }
+        .navbar-brand img {
+            width: 40px; 
+            height: auto; 
+        }
+        .welcome-section {
+            background: linear-gradient(to bottom, rgb(12, 143, 106), white);
+            text-align: left;
+            padding: 60px 20px; 
+            border-radius: 20px; 
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); 
+            margin: 20px;
+        }
+        .welcome-section h1 {
+            color: rgb(12, 143, 106);
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .welcome-section h2 {
+            color: rgb(25, 140, 88);
+            margin: 0;
+            font-size: 1.5rem;
+            margin-top: 10px;
+        }
+        .text-box {
+            color: #0d0f10;
+            width: 100%; 
+            height: 170px; 
+            margin-top: 20px; 
+            padding: 10px; 
+            border: 1px solid #56828a; 
+            border-radius: 10px; 
+            transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s;
+            resize: none; 
+            background-color: #e3f2f1; 
+            font-size: 1rem;
+        }
+        .btn-custom, .btn-donate {
+            background-color: rgb(51, 147, 120); 
+            color: white; 
+            margin-top: 20px; 
+            padding: 12px 24px; 
+            border: none;
+            border-radius: 15px; 
+            transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Increased shadow */
+        }
+        .btn-custom:hover, .btn-donate:hover {
+            background-color: rgb(25, 140, 88);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5); /* More shadow on hover */
+        }
+        .btn-donate {
+            margin-left: 20px;
+        }
+        .navbar-nav {
+            flex-direction: row; 
+            justify-content: center; 
+            width: 100%; 
+        }
+        .navbar-nav .nav-link {
+            font-family: 'Arial', sans-serif; /* Change font style */
+            font-size: 1rem; /* Decreased font size */
+            padding: 10px 20px; /* Decreased padding */
+            border-radius: 30px; /* Rounded corners */
+            color: rgb(99, 147, 133); /* Button color */
+            transition: background-color 0.3s, color 0.3s; /* Transition effects */
+        }
+        .navbar-nav .nav-link:hover {
+            background-color: rgb(25, 140, 88); /* Background color on hover */
+            color: white; /* Text color on hover */
+        }
+        .click-effect {
+            transition: transform 0.2s;
+        }
+        .click-effect:active {
+            transform: scale(0.95);
+        }
+        @media (max-width: 768px) {
+            .navbar-top {
+                flex-direction: column; 
+            }
+            .navbar-top .contact-info {
+                margin: 10px 0; 
+            }
+            .welcome-section h1, .welcome-section h2 {
+                text-align: center; 
+            }
+        }
+    </style> 
+</head>
+<body>
+
+    <div class="navbar-top">
+        <div class="contact-info">
+            <div class="email">info@lifelinewelfare.com</div>
+            <div class="phone-number">+92 309 7776881-2</div>
+        </div>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" class="click-effect"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank" class="click-effect"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank" class="click-effect"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand click-effect" href="#">
+            <img src="123.jpg" alt="Lifeline Foundation Logo"> 
+            Lifeline Foundation
+        </a>
+        <button class="navbar-toggler click-effect" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link click-effect" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link click-effect" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link click-effect" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link click-effect" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link click-effect" href="#">Donation</a>
+                </li>
+            </ul>
+            <button class="btn btn-donate click-effect">DONATE</button>
+        </div>
+    </nav>
+    <div class="welcome-section">
+        <h1>Lifeline Welfare Foundation</h1>
+        <h2>Join hands and be a Hero</h2>
+        <textarea class="text-box" readonly>
+Lifeline Welfare Foundation is a crowd-funding platform in the welfare sector of Pakistan. We work in line with the six Sustainable Development Goals of the United Nations that include NO POVERTY, ZERO HUNGER, GOOD HEALTH, WELL-BEING, QUALITY EDUCATION, GENDER EQUALITY, DECENT WORK & ECONOMIC GROWTH.
+        </textarea>
+        <button class="btn btn-custom click-effect">See All Campaigns</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
